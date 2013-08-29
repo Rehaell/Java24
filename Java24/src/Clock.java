@@ -8,7 +8,7 @@ public class Clock {
 		Calendar now = Calendar.getInstance();
 		int hour = now.get(Calendar.HOUR_OF_DAY);
 		int minute = now.get(Calendar.MINUTE);
-		int month = now.get(Calendar.MONTH);
+		int month = now.get(Calendar.MONTH) + 1;
 		int day = now.get(Calendar.DAY_OF_MONTH);
 		int year = now.get(Calendar.YEAR);
 		

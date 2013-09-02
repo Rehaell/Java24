@@ -10,9 +10,9 @@ public class Credits {
 		String actor2 = "Harvey Keitel";
 		
 		System.out.println(title + " (" + year + ")\n" + 
-				"A " + director + "film.\n\n" + 
-				role1 + "\t" + actor1 + "\n" +
-				role2 + "\t" + actor2);
+				"A " + director.toUpperCase() + " film.\n\n" + 
+				role1 + "\t" + actor1.toUpperCase() + "\n" +
+				role2 + "\t" + actor2.toUpperCase());
 		
 		System.out.println("\n" + director.toUpperCase());
 	}

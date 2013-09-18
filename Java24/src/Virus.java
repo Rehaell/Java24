@@ -5,7 +5,7 @@ public class Virus {
     virusCount++;
   }
   
-  static in getVirusCount() {
+  static int getVirusCount() {
     return virusCount;
   }
 }

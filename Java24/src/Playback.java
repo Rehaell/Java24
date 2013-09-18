@@ -15,7 +15,7 @@ public class Playback extends JFrame {
     add(play);
     add(stop);
     add(pause);
-    steVisible(true);
+    setVisible(true);
   }
   
   private void setLookAndFeel() {

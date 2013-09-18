@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class Point#D extens Point {
+public class Point3D extends Point {
   public int z;
   
   public Point3D(int x, int y, int z) {

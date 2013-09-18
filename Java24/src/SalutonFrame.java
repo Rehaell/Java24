@@ -17,7 +17,7 @@ public class SalutonFrame extends JFrame {
     }
   }
   
-  public static void(String[] arguments) {
+  public static void main(String[] arguments) {
     SalutonFrame sal = new SalutonFrame();
   }
   

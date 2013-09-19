@@ -49,6 +49,7 @@ public class EuroMillions extends JFrame {
 		RandomizeNum arr = new RandomizeNum();
 		
 		int[] randNum = arr.random(5,50);
+	
 		int[] randEst = arr.random(2,11);
 		
 		System.out.println("\n");

@@ -3,13 +3,19 @@ import java.util.*;
 
 public class RandomizeNum {
 	
-	public int[] random(int arrayLength, int maximo) {
+	public int[] random(int arrayLength) {
+		return this.random(arrayLength,1,100);
+	}
+	
+	
+	
+	public int[] random(int arrayLength,int minimo, int maximo) {
 		int[] arrayNum = new int[arrayLength];
 		boolean numRepetido = false;
 		
 		//main cycle that runs arrayLength - 1 times
 		for(int i = 0; i < arrayNum.length; i++){
-			int randNum = 1 + (int)(Math.random() * maximo );
+			int randNum = minimo + (int)(Math.random() * maximo );
 			System.out.print("O numero gerado foi : " + randNum + "\n");
 						
 			
@@ -24,7 +30,7 @@ public class RandomizeNum {
 				}
 				//if randNum is repeated in the array, randomizes new randNum
 				if(numRepetido == true){
-					randNum = 1 + 	(int)(Math.random() * maximo );
+					randNum = minimo + 	(int)(Math.random() * maximo );
 					System.out.print("O numero gerado foi repetido, gerado um novo  : " + randNum + "\n");
 				} else{
 					//if not, adds it to the array
@@ -40,6 +46,16 @@ public class RandomizeNum {
 		return arrayNum;
 		
 		
+	}
+	
+	//if maximum random number not specified assume 100
+	public int[] random(int arrayLength) {
+		return this.random(arrayLength,100);
+	}
+	
+	//if minimum random number not specified assume 1
+	public int[] random(int arrayLength, int maximo) {
+		return this.random(arrayLength, 1, maximo);
 	}
 
 }

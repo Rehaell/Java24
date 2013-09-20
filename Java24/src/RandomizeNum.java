@@ -3,12 +3,7 @@ import java.util.*;
 
 public class RandomizeNum {
 	
-	public int[] random(int arrayLength) {
-		return this.random(arrayLength,1,100);
-	}
-	
-	
-	
+
 	public int[] random(int arrayLength,int minimo, int maximo) {
 		int[] arrayNum = new int[arrayLength];
 		boolean numRepetido = false;

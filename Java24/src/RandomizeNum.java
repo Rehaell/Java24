@@ -11,7 +11,7 @@ public class RandomizeNum {
 		//main cycle that runs arrayLength - 1 times
 		for(int i = 0; i < arrayNum.length; i++){
 			int randNum = minimo + (int)(Math.random() * maximo );
-			System.out.print("O numero gerado foi : " + randNum + "\n");
+			//System.out.print("O numero gerado foi : " + randNum + "\n");
 						
 			
 			while(true){
@@ -26,11 +26,11 @@ public class RandomizeNum {
 				//if randNum is repeated in the array, randomizes new randNum
 				if(numRepetido == true){
 					randNum = minimo + 	(int)(Math.random() * maximo );
-					System.out.print("O numero gerado foi repetido, gerado um novo  : " + randNum + "\n");
+				//	System.out.print("O numero gerado foi repetido, gerado um novo  : " + randNum + "\n");
 				} else{
 					//if not, adds it to the array
 					arrayNum[i] = randNum;
-					System.out.print("O numero foi escrito no Array : " + arrayNum[i] + "\n");
+					//System.out.print("O numero foi escrito no Array : " + arrayNum[i] + "\n");
 					break;
 				}
 			}					
